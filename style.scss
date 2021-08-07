@@ -1,0 +1,1010 @@
+@font-face {
+    font-family: 'shabnam';
+    src: url('./assets/fonts/Shabnam.eot');
+    src: url('./assets/fonts/Shabnam.woff') format('woff');
+    src: url('./assets/fonts/Shabnam.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'shabnam-bold';
+    src: url('./assets/fonts/Shabnam-Bold.eot');
+    src: url('./assets/fonts/Shabnam-Bold.woff') format('woff');
+    src: url('./assets/fonts/Shabnam-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "shabnam";
+}
+
+button {
+    font-family: 'shabnam-bold';
+    font-weight: initial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --yellow: #ffcb05;
+    --blue: #241f43;
+    --black: #03060f;
+    --milky: #f5f5f5;
+}
+
+#container {
+    width: 100%;
+    max-width: 1024px;
+    padding: 0px 10px 0px 10px;
+    margin: auto;
+}
+
+.nav-header-section-container {
+    background: linear-gradient(var(--blue) 50%, #03060f 50%);
+}
+
+#nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 0px 20px 40px 20px;
+    direction: rtl;
+}
+
+#nav-label {
+    width: 200px;
+}
+
+#nav {
+    margin-right: 20px;
+}
+
+#nav-item {
+    margin-top: 17px;
+    display: inline-block;
+}
+
+.nav-collapser{
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+#nav-link {
+    margin: 8px;
+}
+
+#nav-link:link {
+    color: white;
+}
+
+#nav-link:visited {
+    color: white;
+}
+
+.btn-submit-game {
+    background: none;
+    color: var(--yellow);
+    border: 2px solid var(--yellow);
+    margin: 5px;
+    padding: 5px;
+}
+
+.btn-submit-game a {
+    color: var(--yellow);
+}
+
+#header {
+    direction: rtl;
+    margin: auto;
+    max-width: 800px;
+}
+
+.header-title {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.header-text {
+    color: whitesmoke;
+    font-size: 1.1rem;
+    color: gray;
+}
+
+.header-rate-part {
+    display: flex;
+    max-height: 20;
+    margin-top: 40px;
+}
+
+.header-pic {
+    position: relative;
+    width: 80%;
+    margin-left: 20px;
+}
+
+.header-pic::after{
+    position: absolute;
+    content: 'پروژه روز';
+    top: -10px;
+    right: -10px;
+    padding: 3px;
+    font-size: 14px;
+    text-align: center;
+    width: 60px;
+    color: var(--blue);
+    background-color: var(--yellow);
+}
+
+.header-pic-badge {
+    position: absolute;
+    top: 295px;
+    width: 59px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--yellow);
+    color: var(--blue);
+    margin-top: -20px;
+}
+
+.header-game-pic {
+    width: 100%;
+}
+
+.ratings {
+    width: 50%;
+    max-width: 255px;
+    margin-right: 70px;
+}
+
+.support-percentage {
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+}
+
+.supported-percentage {
+    width: 80%;
+    height: 10px;
+    background-color: yellow;
+}
+
+.supported-percentage::before {
+    content: '';
+    width: 0;
+    height: 0;
+    margin-right: 97%;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid var(--yellow);
+}
+
+.supported-percentage::after {
+    content: "۸۰٪";
+    display: block;
+    margin-right: 97%;
+    height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    margin-top: -15px;
+}
+
+.supporter,
+.money {
+    margin: 5px 0px 5px 0px;
+    direction: rtl;
+}
+
+.money {
+    margin-top: 22px;
+}
+
+.max-money,
+.collected-money,
+.supporters {
+    color: gray;
+    font-size: 12px;
+}
+
+.max-money {
+    font-size: 0.7rem;
+    margin-bottom: -4px;
+}
+
+.collected-money-number {
+    color: white;
+    font-size: 1.35rem;
+}
+
+.collected-text {
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    margin-top: -5px;
+}
+
+.supporters-number {
+    color: white;
+    font-size: 1.35rem;
+}
+
+.supporter-text {
+    color: white;
+    font-size: 0.75rem;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+.support-btn-container {
+    text-align: center;
+}
+
+.btn-support {
+    width: 100%;
+    background-color: var(--yellow);
+    border: none;
+    padding: 8px;
+    color: var(--blue);
+    font-size: 0.8rem;
+    border-radius: 2px;
+    margin-top: 10px;
+}
+
+.support-heart-icon {
+    margin-bottom: -7px;
+}
+
+.share-download-btn-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.share-download-btn-container i{
+    font-size: 12px;
+    margin-left: 2px;
+}
+
+.btn-share {
+    background: none;
+    margin: 5px 0px 5px 0px;
+    border: 1px solid var(--yellow);
+    color: var(--yellow);
+}
+
+.btn-download-game {
+    background-color: var(--yellow);
+    margin: 5px 0px 5px 5px;
+    border-style: none;
+    color: var(--blue)
+}
+
+.btn-share,
+.btn-download-game {
+    border-radius: 3px;
+    font-size: 11px;
+    width: 48%;
+    padding: 5px;
+}
+
+.tabs-container {
+    max-width: 1024px;
+    background-color: #3a3657;
+    margin: 40px 0px;
+    box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.425);
+}
+
+.game-details-tablist {
+    text-align: right;
+    margin-right: 70px;
+}
+
+.game-details-tab {
+    text-align: center;
+    display: inline-block;
+    margin-right: 35px;
+    width: 11%;
+    color: var(--yellow);
+    font: {
+        family: 'shabnam-bold';
+        weight: 100;
+        size: 0.9rem;
+    }
+    padding: 20px;
+}
+
+.game-details-tab.active {
+    border-bottom: 3px solid var(--yellow);
+    border-radius: 2px;
+}
+
+#main-section {
+    background-color: var(--milky);
+}
+
+.game-content-container {
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    margin: auto;
+    max-width: 800px;
+}
+
+.game-info {
+    max-width: 450px;
+    padding-bottom: 40px;
+}
+
+.game-info-img {
+    margin: 20px 0px;
+    width: 100%;
+}
+
+.game-info p {
+    direction: rtl;
+    font-size: 0.9rem;
+    color: #212121;
+    line-height: 23px;
+}
+
+.game-info-sidebar {
+    max-width: 260px;
+}
+
+.sidebar-project-status {
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.sidebar-status-text {
+    margin: 8px 0px;
+    color: #212121;
+    background-color: var(--yellow);
+    padding: 14px;
+    font: {
+        family: 'shabnam-bold';
+        weight: 100;
+        size: 0.7rem;
+    }
+}
+
+.sidebar-status-title{
+    font: {
+        family: 'shabnam-bold';
+        weight: 100;
+        size: 0.75rem;
+    }
+}
+
+.sidebar-user-rating-container {
+    text-align: center;
+}
+
+.sidebar-user-rating {
+    background-color: #bdbdbd;
+    margin-top: 5px;
+    padding: 15px;
+}
+
+.sidebar-user-rating-title {
+    @extend .sidebar-status-title;
+    text-align: right;
+}
+
+.rating-goldstars {
+    color: var(--yellow);
+}
+
+.rating-emptystars {
+    color: gray;
+}
+
+.sidebar-circle-rating {
+    margin: 40px 0px 20px 0px;
+}
+
+.sidebar-music-rating,
+.sidebar-graphic-rating,
+.sidebar-story-rating {
+    padding: 13px;
+    margin: 5px;
+    border-radius: 100%;
+    border: 5px solid gray;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sidebar-circle-titles {
+    display: flex;
+    width: 90%;
+    margin-top: 20px;
+    margin-right: 5px;
+    justify-content: space-between;
+}
+
+.sidebar-circle-titles {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.sidebar-rating-btn {
+    width: 100%;
+    padding: 5px;
+    background: none;
+    border: 2px solid var(--black);
+    font: {
+        size: 12px;
+        family: 'shabnam-bold';
+        weight: initial;
+    }
+}
+
+.comments-container {
+    background: url("./assets/vectors/shapes.svg");
+    background-size: 100%;
+    background-position-x: 0px;
+    background-position-y: -120px;
+    background-repeat: no-repeat;
+    padding: 40px;
+}
+
+#comment-section {
+    max-width: 50%;
+    margin: auto;
+}
+
+.comment-section-title {
+    color: white;
+    text-align: right;
+    margin-bottom: 10px;
+    font: {
+        family: 'shabnam-bold';
+        size: 0.9rem;
+        weight: initial;
+    }
+}
+
+.comment-item {
+    background-color: var(--milky);
+    padding: 25px;
+    margin-top: 20px;
+    direction: rtl;
+    color: #212121;
+}
+
+.comment-owner-img {
+    margin-top: -10px;
+    width: 10%;
+    border-radius: 100%;
+}
+
+.comment-owner-name {
+    margin-left: 16%;
+    margin-right: 20px;
+    font-size: 0.8rem;
+    width: 200px;
+}
+
+.comment-owner-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-owner-role {
+    margin-right: 15%;
+    color: gray;
+    margin-top: -10px;
+    font-size: 0.6rem;
+}
+
+.comment-text {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.comment-submission {
+    margin-top: 40px;
+    background-color: var(--milky);
+    display: flex;
+    direction: rtl;
+    color: rgb(139, 139, 139);
+    font-size: 12x;
+    padding: 20px;
+}
+
+.comment-icon {
+    margin-top: -2px;
+    margin-left: 8px;
+    width: 3.5%;
+}
+
+.user-comment {
+    display: flex;
+    justify-content: space-between;
+}
+
+.comment-submitted-time {
+    text-align: left;
+    font-size: 0.6rem;
+    color: gray;
+}
+
+.user-comment .comment-owner-img {
+    margin-top: -8px;
+    width: 8%;
+}
+
+.user-comment .comment-stars {
+    font-size: 14px;
+}
+
+#footer {
+    border-top: 1px solid gray;
+    background-color: #03060f;
+    padding: 20px 100px 10px 30px;
+}
+
+#footer-links {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    font-size: 0.8rem;
+    direction: rtl;
+}
+
+.footer-link-list a:link {
+    color: gray;
+}
+
+.footer-link-list a:visited {
+    color: gray;
+}
+
+.footer-link {
+    margin: 8px;
+    list-style: none;
+}
+
+.footer-social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-label {
+    width: 40%;
+}
+
+.social-icon {
+    width: 12%;
+    margin: 5px;
+    margin-top: 10px;
+}
+
+.footer-copyright {
+    color: gray;
+    font-size: 0.7rem;
+}
+
+.footer-heart-icon {
+    margin-right: 4px;
+    width: 15px;
+    margin-bottom: -3px;
+}
+
+@media screen and (max-width: 468px) {
+
+    @mixin small-btn {
+        font: {
+            size: 12px;
+            family: 'shabnam-bold';
+        }
+        padding: 5px;
+    }
+    
+    body{
+        max-width: 468px;
+    }
+
+    #container{
+        padding: 0px;
+    }
+    
+    .nav-header-section-container {
+        background: linear-gradient(var(--blue) 50%, #03060f 50%);
+        margin: auto;
+        max-width: 100%;
+    }
+
+    #nav-container{
+        margin: 0px 0px 40px 0px;
+        padding-top: 15px;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    #nav-label{
+        width: 90%;
+    }
+
+    .btn-submit-game{
+        @include small-btn;
+        background: none;
+        width: 70%;
+        height: 100%;
+        color: var(--yellow);
+        border: 2px solid var(--yellow);
+        margin: 3px 0px 0px 0px;
+        padding: 5px;
+    }
+
+    .nav-collapser{
+        display:block;
+        margin: {
+            right: 10px;
+            left: 3px;
+            top: 3px;
+        }
+        color: white;
+    }
+
+    #header {
+        max-width: 468px;
+        width: 80%;
+    }
+
+    .header-title {
+        color: white;
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    
+    .header-text {
+        color: whitesmoke;
+        font-size: 12px;
+        color: gray;
+    }
+
+    .header-rate-part {
+        display: block;
+        width: 100%;
+    }
+    
+    .header-pic {
+        position: relative;
+        width: 125%;
+        margin-right: -35px;
+    }
+
+    .ratings {
+        width: 100%;
+        margin: {
+            top: 30px;
+            right: auto;
+            left: auto;
+        }
+        max-width: none;
+    }
+    
+    .support-percentage {
+        width: 100%;
+        background-color: rgb(53, 53, 53);
+    }
+    
+    .supported-percentage {
+        width: 80%;
+        height: 9px;
+        background-color: var(--yellow);
+    }
+    
+    .supported-percentage::before {
+        content: '';
+        width: 0;
+        height: 0;
+        margin-right: 97%;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 10px solid var(--yellow);
+    }
+    
+    .supported-percentage::after {
+        content: "۸۰٪";
+        display: block;
+        margin-right: 95%;
+        font-size: 12px;
+    }
+    
+    .supporter,
+    .money {
+        margin: 10px 0px 5px 0px;
+    }
+
+    .collected-text,.supporter-text {
+        font-size: 0.7rem;
+    }
+
+    .btn-support{
+        @include small-btn;
+        font: {
+            weight: initial;
+            size: 14px
+        }
+    }
+
+    .btn-share {
+        border: 2px solid var(--yellow);
+        color: var(--yellow);
+    }
+    
+    .btn-download-game {
+        background-color: var(--yellow);
+        margin: 5px 0px 5px 5px;
+        border-style: none;
+        color: var(--blue)
+    }
+    
+    .btn-share,
+    .btn-download-game {
+        @include small-btn;
+        border-radius: 1px;
+        width: 48%;
+    }
+
+    .tabs-container {
+        max-width: none;
+        width: 100%;
+    }
+
+    .game-details-tablist {
+        text-align: center;
+        margin-right: 0;
+    }
+    
+    .game-details-tab {
+        margin-right: 0px;
+        width: 25%;
+        font: {
+            weight: 00;
+            size: 0.75rem
+        }
+        padding: 14px;
+    }
+    
+    .game-details-tab.active {
+        border-bottom: 2px solid var(--yellow);
+    }
+
+    .header-pic::after{
+        right: -1px;
+        top: 8px;
+    }
+
+    .game-content-container {
+        display: block;
+        justify-content: center;
+        max-width: 80%;
+    }
+    
+    .game-info {
+        max-width: none;
+    }
+
+    .game-info p {
+        font-size: 0.7rem;
+        margin: {
+            top: 10px;
+            bottom: 10px;
+        }
+        line-height: 20px;
+    }
+    
+    .game-info-sidebar {
+        max-width: 95%;
+        margin: auto;
+        padding-bottom: 40px;
+    }
+    
+    .sidebar-status-text {
+        font-size: 0.65rem;
+    }
+    
+    .sidebar-status-title,.sidebar-user-rating-title{
+        font-size: 0.7rem;
+    }
+
+    // .sidebar-music-rating,
+    // .sidebar-graphic-rating,
+    // .sidebar-story-rating {
+    //     padding: 13px;
+    //     margin: 5px;
+    //     border-radius: 100%;
+    //     border: 5px solid gray;
+    //     font-size: 1.3rem;
+    //     text-align: center;
+    //     font-weight: bold;
+    // }
+    
+    // .sidebar-circle-titles {
+    //     display: flex;
+    //     width: 90%;
+    //     margin-top: 20px;
+    //     margin-right: 5px;
+    //     justify-content: space-between;
+    // }
+    
+    .sidebar-circle-titles {
+        font: {
+            size: 12px;
+            family: 'shabnam-bold';
+            weight: initial;
+        }
+    }
+    
+    .sidebar-rating-btn {
+        @include small-btn;
+        font: {
+            weight: initial;
+            size: 12px;
+        }
+        width: 100%;
+    }
+
+    .comments-container {
+        background: url("./assets/vectors/shapes.svg");
+        background-size: 100%;
+        background-position-x: 0px;
+        background-position-y: 150px;
+        background-repeat: no-repeat;
+    }
+    
+    #comment-section {
+        max-width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .comment-item {
+        padding: 25px 18px;
+    }
+    
+    .comment-section-title {
+        margin: {
+            top: 10px;
+            bottom: 10px;
+        }
+        font: {
+            size: 0.8rem;
+            family: 'shabnam-bold';
+            weight: initial;
+        }
+    }
+    
+    .comment-owner-img {
+        margin-top: -10px;
+        width: 13.5%;
+        height: 13.5%;
+        border-radius: 50%;
+    }
+    
+    .comment-owner-name {
+        margin-left: 0px;
+        margin-right: 3%;
+        font: {
+            size: 0.65rem;
+            family: 'shabnam-bold';
+            weight: initial;
+        }
+        width: 54%;
+    }
+
+    .comment-owner-role {
+        margin-right: 17.5%;
+        margin-top: -5px;
+        font: {
+            family: 'shabnam-bold';
+            size: 0.48rem;
+            weight: initial;
+        }
+    }
+    
+    .comment-text {
+        font-size: 0.60rem;
+    }
+
+    .comment-stars{
+        font-size: 13px;
+    }
+    
+    .comment-submission {
+        position: relative;
+        padding: 18px;
+    }
+
+    .comment-icon {
+        position: absolute;
+        bottom: 18px;
+        width: 5%;
+    }
+    
+    .comment-submission-text{
+        margin-right: 20px;
+        font: {
+            family: 'shabnam-bold';
+            size: 10px;
+            weight: initial;
+        }
+    }
+
+    .comment-submitted-time {
+        text-align: left;
+        font: {
+            size: 0.5rem;
+            family: 'shabnam-bold';
+            weight: initial;
+        }
+    }
+    
+    .user-comment .comment-owner-img {
+        margin-top: -10px;
+        width: 14%;
+    }
+    
+    .user-comment .comment-stars {
+        font-size: 11.5px;
+    }
+
+    #footer {
+        border-top: 1px solid rgba(128, 128, 128, 0.344);
+        margin: auto;
+        padding: 30px 0px 10px 0px;
+        width: 100%;
+    }
+    
+    #footer-links {
+        display: block;
+        max-width: 80%;
+        justify-content: center;
+        padding-left: 0px;
+        font-size: 0.7rem;
+        direction: rtl;
+        margin: auto;
+    }
+
+    .footer-link-list{
+        display: inline-block;
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+
+    .footer-social-icons {
+        margin-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .footer-label {
+        width: 23%;
+    }
+    
+    .social-icon {
+        width: 7%;
+        margin: 5px;
+    }
+    
+    .footer-copyright {
+        font-size: 0.55rem;
+        padding-left: 15px;
+    }
+    
+    .footer-heart-icon {
+        margin-right: 2px;
+        width: 12px;
+    }
+}
